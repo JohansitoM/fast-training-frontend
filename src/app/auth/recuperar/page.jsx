@@ -3,9 +3,9 @@ import { useState } from "react";
 import RecuperarForm from "@/components/auth/RecuperarForm";
 import LandingHeader from "@/components/landingPage/LandingHeader";
 import HeroSection from "@/components/landingPage/HeroSection";
-import BeneficiosSection from "@/components/landingPage/BeneficiosSection";
-import AppDescargar from "@/components/landingPage/AppDescargar";
-import MisionVision from "@/components/landingPage/MisionVision";
+// import BeneficiosSection from "@/components/landingPage/BeneficiosSection";
+// import AppDescargar from "@/components/landingPage/AppDescargar";
+// import MisionVision from "@/components/landingPage/MisionVision";
 import LandingFooter from "@/components/landingPage/LandingFooter";
 
 export default function RecuperarPage() {
