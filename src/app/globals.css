@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* === 🌐 Variables base (modo claro) === */
+@theme {
+    /* 🎨 Light Theme Colors */
+    --color-mint-500: oklch(0.72 0.11 0);
+    --color-background: #f5f9ff;
+    --color-placeholder: #e3f2fd;
+    --color-divider: #c5d9e8;
+    --color-primary-typo: #1a2530;
+    --color-secondary-typo: #3e5468;
+    --color-carrousel: #10171d;
+    --color-other-bg: #d1e5f4;
+    --color-main-accent: #00e0ff;
+    --color-secondary-accent: #008cff;
+    --color-tertiary-accent: #f79d1c;
+}
+
+/* === 🌙 Modo oscuro manual (con .dark en <html>) === */
+.dark {
+    /* 🌙 Dark Theme Colors */
+    --color-background: #0b121a;
+    --color-placeholder: #141c27;
+    --color-divider: #1f2a38;
+    --color-primary-typo: #e3f2fd;
+    --color-secondary-typo: #a5b9c7;
+    --color-carrousel: #ffffff;
+    --color-other-bg: #17202a;
+    --color-main-accent: #00e0ff;
+    --color-secondary-accent: #008cff;
+    --color-tertiary-accent: #f79d1c;
+}
+
+/* === 🎨 Aplicar variables a las fuentes === */
+body {
+    font-family: var(--font-poppins);
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+/* === 📦 Reset básico === */
+* {
+    @apply box-border;
+}
+
+/* === 🧭 Scrollbar oculta === */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* === 📅 Estilos para React Big Calendar (usando Tailwind) === */
+.rbc-event {
+    @apply bg-blue-500 text-white font-bold rounded-md p-1;
+}
+
+.rbc-calendar {
+    @apply bg-white dark:bg-[#0b121a];
+}
+
+.rbc-toolbar {
+    @apply bg-gray-900 text-white p-3 rounded-lg shadow-md;
+}
+
+.rbc-btn-group button {
+    @apply bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition;
+}
+
+/* === 🎨 Clases utilitarias personalizadas === */
+.azul-principal {
+    background-color: #205088;
+}
+
+.text-azul-principal {
+    color: #205088;
+}
