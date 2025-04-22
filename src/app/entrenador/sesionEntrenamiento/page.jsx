@@ -1,7 +1,7 @@
-"use client";
+// "use client";
 
-// import EntrenamientoForm from "./components/EntrenamientoForm";
+// // import EntrenamientoForm from "./components/EntrenamientoForm";
 
-export default function Home() {
-  return <div className="flex">{/* <EntrenamientoForm /> */}</div>;
-}
+// export default function Home() {
+//   return <div className="flex">{/* <EntrenamientoForm /> */}</div>;
+// }
